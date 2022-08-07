@@ -1,0 +1,11 @@
+z:\Source Files\F#\MUSHarp\bin\Debug\net6.0\MUSHarp.exe
+z:\Source Files\F#\MUSHarp\bin\Debug\net6.0\MUSHarp.deps.json
+z:\Source Files\F#\MUSHarp\bin\Debug\net6.0\MUSHarp.runtimeconfig.json
+z:\Source Files\F#\MUSHarp\bin\Debug\net6.0\MUSHarp.dll
+z:\Source Files\F#\MUSHarp\bin\Debug\net6.0\MUSHarp.pdb
+z:\Source Files\F#\MUSHarp\obj\Debug\net6.0\MUSHarp.fsproj.AssemblyReference.cache
+z:\Source Files\F#\MUSHarp\obj\Debug\net6.0\MUSHarp.AssemblyInfoInputs.cache
+z:\Source Files\F#\MUSHarp\obj\Debug\net6.0\MUSHarp.AssemblyInfo.fs
+z:\Source Files\F#\MUSHarp\obj\Debug\net6.0\MUSHarp.dll
+z:\Source Files\F#\MUSHarp\obj\Debug\net6.0\MUSHarp.pdb
+z:\Source Files\F#\MUSHarp\obj\Debug\net6.0\MUSHarp.genruntimeconfig.cache

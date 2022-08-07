@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q4sDM1rccg2FKI/PKJcqL7kxoWE36NPqUTqzMHJqzp929DTL8Td51aOgg3KLTgbc6FVLoE9/r/T2/BXwbok1Tw==",
+  "dgSpecHash": "WVavOfNiloYXBuacWA1A4HPqarhpcNCJRb5zczGw8fXWKRhnVxdnXsa/VkVNUlFNsy2kW6AG58OLx+SFtIRifg==",
   "success": true,
   "projectFilePath": "Z:\\Source Files\\F#\\MUSHarp\\MUSHarp.fsproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\searshaa\\.nuget\\packages\\fsharp.core\\6.0.5\\fsharp.core.6.0.5.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
