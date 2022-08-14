@@ -11,12 +11,14 @@ module Game =
     //Available without needing to pass lock
     member val getLock = AnyLock with get, set
     member val setLock = AnyLock with get, set
-    member val Name = "<GameObject>" with get, set
-    member val Desc = "<Desc>" with get, set
+    member val name = "<GameObject>" with get, set
+    member val desc = "<Desc>" with get, set
+    
     //Hidden without the ability to pass lock
-    member val ID = 0 with get, set //TODO: Randomize this number and check
+    member val id = 0 with get, set //TODO: Randomize this number and check
                                //To ensure that no other objects have it
                                //Also maybe make it immutable after initializate
+    
 
   and PlayerObject() =
     inherit GameObject()
@@ -31,7 +33,7 @@ module Game =
                                               //a group you're part of.
 
     //TODO: Actually lock this.
-    member val MemberList = Map[(P.ID,P)] with get, set
+    member val MemberList = Map[(P.id,P)] with get, set
 
 
   and Lock =
@@ -49,9 +51,9 @@ module Game =
           | AnyLock -> true
           | NoLoginLock -> false
           | AdminLock -> (match O with
-                                    | :? PlayerObject as Player -> Player.Admin
+                                    | :? PlayerObject as player -> player.Admin
                                     | _ -> false)
-          | ObjectLock(o) -> O.ID = o.ID
-          | GroupLock(g) -> g.MemberList.ContainsKey(O.ID)
+          | ObjectLock(o) -> O.id = o.id
+          | GroupLock(g) -> g.MemberList.ContainsKey(O.id)
           | OrLock(l,r) -> l.Auth(O) || r.Auth(O)
           | AndLock(l,r) -> l.Auth(O) && r.Auth(O)

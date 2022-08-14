@@ -12,4 +12,19 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\searshaa\.nuget\packages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)fsharp.core\6.0.5\contentFiles\any\netstandard2.1\FSharp.Core.xml" Condition="Exists('$(NuGetPackageRoot)fsharp.core\6.0.5\contentFiles\any\netstandard2.1\FSharp.Core.xml')">
+      <NuGetPackageId>FSharp.Core</NuGetPackageId>
+      <NuGetPackageVersion>6.0.5</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>FSharp.Core.xml</TargetPath>
+      <Private>True</Private>
+      <Link>FSharp.Core.xml</Link>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\searshaa\.nuget\packages\fsharp.core\6.0.5</PkgFSharp_Core>
+  </PropertyGroup>
 </Project>

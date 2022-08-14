@@ -46,8 +46,8 @@ module Connector =
     open System
     open System.Net
 
-    [<EntryPoint>]
     do
+        let cube = Array.create 5 "t" 
         Console.WriteLine("Starting Server...")
         try
             let server = TcpListener(IPAddress.Loopback,55555)

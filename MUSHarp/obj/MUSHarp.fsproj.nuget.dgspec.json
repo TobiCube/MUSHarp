@@ -20,7 +20,7 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\6.0.302\\FSharp\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\6.0.303\\FSharp\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +41,13 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[6.0.5, )",
+              "generatePathProperty": true
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
